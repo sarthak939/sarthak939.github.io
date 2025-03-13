@@ -108,7 +108,200 @@
 .zoom-effect:hover {
   transform: scale(1.1);
 }
+/* Mobile Responsiveness - Add this at the end of your existing CSS */
 
+/* Small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+  /* General Responsive Adjustments */
+  .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* Navbar responsiveness */
+  .navbar-brand {
+    font-size: 18px;
+  }
+  
+  /* Hero section adjustments */
+  #home-section .one-third {
+    order: 1; /* Change image order on mobile */
+  }
+  
+  #home-section .one-forth {
+    order: 2;
+    padding: 2rem;
+  }
+  
+  #typing-animation {
+    font-size: 20px;
+  }
+  
+  /* About section layout fix */
+  .about-img img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .about-info {
+    padding: 10px;
+    margin-top: 15px;
+  }
+  
+  .about-info p {
+    font-size: 14px;
+  }
+  
+  .skill-mf {
+    margin-top: 20px;
+  }
+  
+  /* Resume section */
+  .resume-wrap {
+    padding: 15px;
+  }
+  
+  /* Projects section */
+  .blog-entry {
+    margin-bottom: 30px;
+  }
+  
+  .block-20 {
+    height: 200px;
+  }
+  
+  /* Contact section */
+  .box {
+    margin-bottom: 20px;
+  }
+  
+  /* Footer adjustments */
+  .ftco-footer {
+    padding: 3em 0;
+  }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  /* Hero section cleanup */
+  .hero h1 {
+    font-size: 28px;
+  }
+  
+  /* About section adjustments */
+  .col-md-6.col-lg-5.d-flex,
+  .col-md-6.col-lg-7.pl-lg-5.pb-5 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  
+  .about-info p {
+    margin-bottom: 5px;
+  }
+  
+  /* Counter section layout fix */
+  .ftco-counter .block-18 {
+    margin-bottom: 20px;
+  }
+  
+  /* Improve margins throughout */
+  .ftco-section {
+    padding: 4em 0;
+  }
+  
+  .ftco-no-pt {
+    padding-top: 0;
+  }
+  
+  .ftco-no-pb {
+    padding-bottom: 0;
+  }
+}
+
+/* Fix owl carousel on mobile */
+@media only screen and (max-width: 992px) {
+  .owl-carousel.home-slider .slider-item {
+    background-position: center center !important;
+  }
+  
+  .owl-carousel.home-slider .slider-item .one-third,
+  .owl-carousel.home-slider .slider-item .one-forth {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .owl-carousel.home-slider .slider-item .one-third {
+    display: none;
+  }
+  
+  .home-slider .slider-item .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .one-forth.d-flex.align-items-center.ftco-animate {
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+/* Fix for Experience section on mobile */
+@media only screen and (max-width: 576px) {
+  .resume-wrap {
+    margin-bottom: 20px;
+  }
+  
+  .resume-wrap h2 {
+    font-size: 18px;
+  }
+  
+  .resume-wrap .date {
+    font-size: 14px;
+  }
+  
+  .resume-wrap .position {
+    font-size: 14px;
+  }
+  
+  /* Better project display on mobile */
+  .blog-entry .text {
+    padding: 10px;
+  }
+  
+  .blog-entry .heading {
+    font-size: 18px;
+  }
+  
+  /* Contact section stacking */
+  .col-md-6.col-lg-3.d-flex.ftco-animate {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* Fix for navbar on mobile */
+@media only screen and (max-width: 992px) {
+  .ftco-navbar-light {
+    background: #000 !important;
+    position: relative;
+    top: 0;
+  }
+  
+  .ftco-navbar-light .navbar-brand {
+    color: #fff;
+  }
+  
+  .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #fff;
+  }
+}
 
 </style>
 
